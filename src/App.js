@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import UserList from './views/UserList'
 import UserForm from './views/UserForm'
+import Login from './views/Login'
 import { Button, Icon } from 'react-native-elements'
 import { UsersProvider } from './context/UsersContext'
 
@@ -14,7 +15,7 @@ export default props => {
         <UsersProvider>
             <NavigationContainer>
                 <Stack.Navigator
-                    initialRouteName="UserList"
+                    initialRouteName="Login"
                     screenOptions={screenOptions}>
                     <Stack.Screen
                         name="UserList"
@@ -39,6 +40,13 @@ export default props => {
                             title: "Formulário de Usuários"
                         }}
                     />
+                    <Stack.Screen
+                        name="Login"
+                        component={Login}
+                        options={{
+                            title: "Login"
+                        }}
+                    />
                 </Stack.Navigator>
             </NavigationContainer>
         </UsersProvider>
@@ -47,7 +55,7 @@ export default props => {
 
 const screenOptions = {
     headerStyle: {
-        backgroundColor: '#f4511e'
+        backgroundColor: 'rgb(0, 146, 180)'
     },
     headerTintColor: '#fff',
     headerTitleStyle: {
