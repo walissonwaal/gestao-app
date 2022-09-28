@@ -1,9 +1,7 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableWithoutFeedback, Keyboard, KeyboardAvoidingView } from 'react-native'
-import LoginHeader from './LoginComponents/LoginHeader'
-import LoginForm from './LoginComponents/LoginForm'
-import { ScrollView } from 'react-native';
-// import { Button } from 'react-native-elements';
+import { View, Text, StyleSheet, TouchableWithoutFeedback, Keyboard, KeyboardAvoidingView, ScrollView } from 'react-native'
+import CadastroHeader from './CadastroComponents/CadastroHeader'
+import CadastroForm from './CadastroComponents/CadastroForm'
 
 
 
@@ -21,8 +19,8 @@ export default props => {
                 style={styles.container}
             >
                 <ScrollView>
-                    <LoginHeader />
-                    <LoginForm />
+                    <CadastroHeader />
+                    <CadastroForm />
                 </ScrollView>
             </KeyboardAvoidingView>
         </DismissKeyboard>
@@ -31,7 +29,7 @@ export default props => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        height: "100%",
         paddingHorizontal: 16,
     }
 })

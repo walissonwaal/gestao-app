@@ -8,14 +8,11 @@ export default props => {
   return (
     <>
       <View style={styles.container}>
-        <View style={styles.logoArea}>
-          <Image source={Logo} style={styles.logo} />
-        </View>
         <View style={styles.title}>
-          <TitleText>Bem-vindo ao Gestão App</TitleText>
+          <TitleText>Cadastre-se</TitleText>
         </View>
         <View>
-          <SubTitleText>Digite o e-mail e sua senha de registro.</SubTitleText>
+          <SubTitleText>Preencha todos os campos abaixo para realizar seu cadastro.</SubTitleText>
         </View>
       </View>
 
@@ -26,22 +23,20 @@ export default props => {
 
 const styles = StyleSheet.create({
   container: {
-    // backgroundColor: '#f5c41c',
-    // marginVertical: 26
-  },
-  logoArea: {
-    height: 100,
-    width: "100%",
-    marginVertical: 26,
-    alignItems: "center"
-  },
-  logo: {
-    flex: 1,
-    height: "100%",
-    width: 50,
-    resizeMode: 'contain',
+    marginVertical: 26
   },
   title: {
     marginBottom: 16
   }
-})
+  })
+  // logoArea: {
+  //   height: 100,
+  //   width: "100%",
+  //   marginVertical: 26,
+  //   alignItems: "center"
+  // },
+  // logo: {
+  //   flex: 1,
+  //   height: "100%",
+  //   width: 50,
+  //   resizeMode: 'contain',

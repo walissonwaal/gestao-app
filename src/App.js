@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import UserList from './views/UserList'
 import UserForm from './views/UserForm'
 import Login from './views/Login'
+import Cadastro from './views/Cadastro'
 import { Button, Icon } from 'react-native-elements'
 import { UsersProvider } from './context/UsersContext'
 
@@ -15,7 +16,7 @@ export default props => {
         <UsersProvider>
             <NavigationContainer>
                 <Stack.Navigator
-                    initialRouteName="Login"
+                    initialRouteName="Cadastro"
                     screenOptions={screenOptions}>
                     <Stack.Screen
                         name="UserList"
@@ -38,6 +39,13 @@ export default props => {
                         component={UserForm}
                         options={{
                             title: "Formulário de Usuários"
+                        }}
+                    />
+                    <Stack.Screen
+                        name="Cadastro"
+                        component={Cadastro}
+                        options={{
+                            title: "Cadastro"
                         }}
                     />
                     <Stack.Screen

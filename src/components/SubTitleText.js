@@ -11,8 +11,7 @@ export default (props) => {
 
 const styles = StyleSheet.create({
     text: {
-        fontSize: 15,
-        // fontWeight: 'bold'
+        fontSize: 14
     }
 })
 
